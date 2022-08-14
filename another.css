@@ -13,8 +13,8 @@ overflow-x: hidden;
 
 @font-face {
     font-family: 'vivaldiitalic';
-    src: url('vivaldii-webfont.woff2') format('woff2'),
-         url('vivaldii-webfont.woff') format('woff');
+    src: url('migraitalic.woff2') format('woff2'),
+         url('migraitalic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -22,8 +22,8 @@ overflow-x: hidden;
 
 @font-face {
     font-family: 'goethemedium';
-    src: url('goethe-olw3-webfont.woff2') format('woff2'),
-         url('goethe-olw3-webfont.woff') format('woff');
+    src: url('telegraf.woff2') format('woff2'),
+         url('telegraf.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -43,15 +43,14 @@ top:1vh;
 position: fixed;
 width:30vw;
 height:90vh;
-font-family: 'goethemedium', serif;
+font-family: 'goethemedium', sans-serif;
 font-size: 45px;
 font-weight: 400;
 color:var(--gray);
 margin-left: 1vw;
-  font-style:italic;
 }
 .cv{
-  font-family: 'goethemedium', serif;
+  font-family: 'goethemedium', sans-serif;
   font-size: 25px;
   font-weight: 400;
   color:var(--gray);
@@ -60,7 +59,6 @@ margin-left: 1vw;
   left: 0;
   bottom: 0.5vh;
   width: 30vw;
-    font-style:italic;
 }
 .expl{
   padding:1vw;
@@ -93,7 +91,7 @@ p::selection { color: transparent; }
 .inner {
 	height: 40vw;
 	width: 40vw;
-  overflow:  overflow-y: scroll;
+  overflow:  scroll;
 
 }
 
@@ -119,8 +117,7 @@ p::selection { color: transparent; }
   font-weight: 300;
 	font-size: 20px;
 	overflow:auto;
-  font-family: 'goethemedium', serif;
-  font-style:italic;
+  font-family: 'goethemedium', sans-serif;
 }
 
 .zoomed.large {
