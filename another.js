@@ -15,19 +15,15 @@ $(document).ready(function() {
 			el_h = $('.draggable').outerHeight();
 
 		$('body').on('mousemove', function(e) {
-
+// repostion the element with the current mouse position from the middle point
 			if ($dragging) {
-				var ox = e.pageX - $dragging.offset().left;
-				var oy = e.pageY - $dragging.offset().top;
-
-
 				$dragging.offset({
 					top: e.pageY - el_h / 2,
 					left: e.pageX - el_w / 2
 				});
 			}
 		});
-		$dragging = $(e.currentTarget);
+		$dragging = $('.draggable');
 
 	}).on('mouseup', '.draggable', function(e) {
 		$dragging = null;
@@ -37,6 +33,7 @@ $(document).ready(function() {
 		});
 	});
 
+	// to randomize their positions on page
 	$('.zoomed').each(function(){
 		var x = Math.round(Math.random() * ($(window).width()- $(this).width()/2));
 		var y = Math.round(Math.random() * ($(window).height() - $(this).height()/2));
@@ -47,33 +44,11 @@ $(document).ready(function() {
 		})
 	});
 
+// Enlarge on click
 	$('.zoomed').on({
 		click: function(e){
 
 			$(this).toggleClass('large');
 		}
 	});
-
-	$('.zoomed a').on({
-		mouseenter: function(e){
-			e.preventDefault();
-
-			var filename = $(this).attr('href');
-			var $this = $(this);
-			$('body img.extra').remove();
-			$('body').append(
-
-				$('<img>').addClass('extra').attr({
-					src: 'images/'+filename
-				}).css({
-					top: $this.offset().top + 40,
-					left: $this.offset().left
-				})
-			);
-		},
-		mouseleave: function(e){
-			e.preventDefault();
-			$('body img.extra').remove();
-		}
-	})
 });
