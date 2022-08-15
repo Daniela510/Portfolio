@@ -1,4 +1,28 @@
+let filterProjects, cv, cvtoggle, allProjects;
+
+
+  document.addEventListener("DOMContentLoaded", () => {  
+	cv = document.querySelector('footer');
+	const tempAllProjects = document.querySelectorAll('.zoomed');
+	allProjects = Array.from(tempAllProjects);
+	cvtoggle = () => {
+		cv.classList.toggle('up');
+		cv.classList.toggle('down');
+	  } 
+	
+	filterProjects = (word)=>{
+		allProjects.forEach(el => {
+			el.classList.add('invisible');
+			if(el.classList.contains(word)){
+				el.classList.remove('invisible')
+			}
+		});
+	  }
+  });
+
+// the jquery was done in 2019 under guidance with help of Hannes Bernard, teacher at KABK
 $(document).ready(function() {
+
 	var $dragging = null;
 
 	$('body').on('mousedown', '.zoomed', function(e) {
