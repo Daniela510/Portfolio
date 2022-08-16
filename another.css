@@ -171,7 +171,13 @@ img.extra {
   height: auto;
 }
 
-
+a:hover{
+  color:var(--purple);
+  transform: scale(99%);
+}
+a:visited{
+  color: inherit;
+}
 p a {
 color: white;
 }
