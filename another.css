@@ -3,14 +3,6 @@
   --purple: #4C00B5;
   --gray: rgba(51, 51, 51, 1);
 }
-body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
-}
-
 @font-face {
   font-family: "migra";
   src: url("fonts/migraitalic.woff2") format("woff2"),
@@ -25,6 +17,14 @@ body {
     url("fonts/telegraf.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
