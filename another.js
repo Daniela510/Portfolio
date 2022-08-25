@@ -76,3 +76,14 @@ $(document).ready(function() {
 		}
 	});
 });
+
+// Another hidden fact about me is that I hate spiders. I hate all bugs & that includes butterflies. But spiders are the worst...
+//     .          .                   .           .          .       __   __ 
+//     |          |      __   __      |           |          |      (o \Y/ o) 
+//     |          |    ( s \o/ s )    |         / | \        |       \_>|<_/    ___   ___  
+//   / | \        |     \_<>|<>_/     |       \_\(_)/_/      |        (/"\)    { x \o/ x } 
+// \_\(_)/_/    / | \    {_/'\_}      |        _//o\\_     / | \                \_* | *_/
+//  _//o\\_   \_\(_)/_/             / | \       /   \    \_\(_)/_/               (_/'\_) 
+//   /   \     _//o\\_            \_\(_)/_/               _//o\\_   
+//              /   \              _//o\\_                 /   \              
+//                                  /   \ 
